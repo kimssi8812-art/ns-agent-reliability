@@ -4,7 +4,17 @@ The open-source Doctor is free to use under its published license. Commercial se
 
 > Launch-stage offers: the technical capability and package definitions are ready, but NS does not claim external customer validation or customer case studies yet.
 
-## MCP Surface & Contract Quick Audit — ₩990,000
+## Delivery assurance
+
+Paid reliability services are **AI-assisted, evidence-reviewed and human-reviewed**. `CRITICAL` and `HIGH` customer findings require human sign-off before delivery. Audit work is read-only by default, missing evidence remains `UNKNOWN`, and NS does not guarantee discovery of every defect or elimination of all future incidents.
+
+See [Professional service assurance & responsibility boundary](docs/SERVICE_ASSURANCE.md).
+
+Prices below are **fixed regional launch pricing**, not daily FX conversions. USD is the primary global display; KRW is the Korea price.
+
+## MCP Surface & Contract Quick Audit — $750
+
+Korea: **₩990,000**
 
 **Best for:** teams whose MCP/tool surface has grown faster than its contract and authority model.
 
@@ -19,7 +29,9 @@ You receive:
 
 Not a penetration test, application rewrite or full reliability audit.
 
-## AI Agent Reliability Audit — Founding ₩1,490,000 / Standard ₩2,900,000
+## AI Agent Reliability Audit — Founding $1,100 / Standard $2,200
+
+Korea: **Founding ₩1,490,000 / Standard ₩2,900,000**
 
 **Best for:** production or late-staging action-capable agents with repeated execution, recovery or deployment failures.
 
@@ -35,7 +47,9 @@ You receive:
 
 Founding pricing is limited to early bounded engagements and will be retired after reference cases are established.
 
-## Safe Deployment Hardening Sprint — ₩6,900,000
+## Safe Deployment Hardening Sprint — from $5,000
+
+Korea: **₩6,900,000** for the current bounded launch scope
 
 **Best for:** teams that already know their deploy/rollback path can drift, replay stale behavior or confuse candidate success with live success.
 

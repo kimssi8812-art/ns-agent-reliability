@@ -61,7 +61,7 @@
     "installed_cli_smoke": "PASS",
     "doctor_fixture_findings": 15,
     "tests": "32/32 PASS",
-    "tracked_files": 86,
+    "tracked_files": 87,
     "public_scan": "PASS",
     "json_parse": "PASS",
     "wheel_sdist_inspection": "PASS",
@@ -84,7 +84,7 @@
     "wheel_license_scope": "Apache-2.0 software; narrative CC docs not bundled in wheel",
     "sdist_license_scope": "Apache-2.0 software + CC-BY-4.0 narrative docs with both canonical license texts",
     "public_repository": "https://github.com/kimssi8812-art/ns-agent-reliability",
-    "current_main_packaging": "visual Doctor demo + use-case triage + integration guide + sample audit report + commercial services + public no-secret fit-check + GitHub Pages sales surface"
+    "current_main_packaging": "visual Doctor demo + use-case triage + integration guide + sample audit report + service assurance + commercial services + public no-secret fit-check + GitHub Pages sales surface"
   },
   "publish_gate": [
     "tracked-tree secret/path scrub PASS",

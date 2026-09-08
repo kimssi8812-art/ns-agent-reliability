@@ -1,5 +1,14 @@
 # Changelog
 
+## Main — professional service assurance — 2026-09-08
+
+- Added public professional-service assurance and responsibility boundary.
+- Paid Audit/Hardening positioned as AI-assisted, evidence-reviewed and human-reviewed.
+- Added OBSERVED / SUPPORTED / UNKNOWN truth states and CRITICAL/HIGH human sign-off requirement.
+- Audit read-only / Hardening explicit production-change approval boundaries stated.
+- Global public pricing changed to USD primary with fixed Korea KRW secondary pricing.
+- Public tracked scope expanded to 87 files.
+
 ## Main — public packaging enhancement — 2026-09-08
 
 Repository is public and remotely verified. Added the first conversion/discovery layer without changing the Doctor core:

@@ -18,7 +18,7 @@ Status: 0.1.0rc1 RELEASE CANDIDATE / REPOSITORY CHECKS PASS
 - [x] Full regression suite PASS: 32/32.
 - [x] Python source compile PASS.
 - [x] JSON parse PASS for candidate JSON files.
-- [x] `tools/prepublish_check.py` PASS with Doctor included: 86 tracked files / 86 manifest files.
+- [x] `tools/prepublish_check.py` PASS with Doctor included: 87 tracked files / 87 manifest files.
 - [x] Candidate tracked-tree secret/private-path pattern scan PASS.
 
 ## Content/maturity checks

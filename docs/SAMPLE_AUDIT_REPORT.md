@@ -19,13 +19,13 @@ No credentials, private customer data or unrestricted production access are requ
 
 ## Top findings
 
-| Priority | Finding | Severity | Operational risk |
-| --- | --- | --- | --- |
-| 1 | `DUPLICATE_AUTHORITY` | CRITICAL | A stale/concurrent writer can overwrite newer canonical state. |
-| 2 | `EVIDENCE_GAP` | HIGH | “Done” can be accepted without observing the requested result. |
-| 3 | `ROLLBACK_RESURRECTS_DEPRECATED_SURFACE` | CRITICAL | A rollback can re-expose an obsolete tool/contract. |
-| 4 | `UNBOUNDED_RETRY` | HIGH | Failure can create uncontrolled repeated execution/cost. |
-| 5 | `STALE_CLIENT_SERVER_SCHEMA` | HIGH | A stale client can regain authority over the current contract. |
+| Priority | Finding | Severity | Truth state | Operational risk |
+| --- | --- | --- | --- | --- |
+| 1 | `DUPLICATE_AUTHORITY` | CRITICAL | OBSERVED | A stale/concurrent writer can overwrite newer canonical state. |
+| 2 | `EVIDENCE_GAP` | HIGH | SUPPORTED | “Done” can be accepted without observing the requested result. |
+| 3 | `ROLLBACK_RESURRECTS_DEPRECATED_SURFACE` | CRITICAL | OBSERVED | A rollback can re-expose an obsolete tool/contract. |
+| 4 | `UNBOUNDED_RETRY` | HIGH | OBSERVED | Failure can create uncontrolled repeated execution/cost. |
+| 5 | `STALE_CLIENT_SERVER_SCHEMA` | HIGH | SUPPORTED | A stale client can regain authority over the current contract. |
 
 ## Finding detail — DUPLICATE_AUTHORITY
 
@@ -94,3 +94,17 @@ Rollback to the last verified state in the current generation, not to a historic
 ## Commercial follow-up
 
 The audit is useful without implementation work. If the team wants help applying selected NOW items, the findings can be converted into a separately scoped Safe Deployment / Reliability Hardening Sprint.
+
+## Human review record
+
+Illustrative sign-off shape:
+
+- Reviewer: `[human reviewer]`
+- Report version/hash: `[version/hash]`
+- CRITICAL findings reviewed: yes
+- HIGH findings reviewed: yes
+- Findings downgraded/rejected: `[record]`
+- Unresolved UNKNOWN items: `[record]`
+- Implementation included: no — separate scope required
+
+The presence of a Doctor match alone does not make a customer finding OBSERVED or SUPPORTED. The paid report requires evidence review.

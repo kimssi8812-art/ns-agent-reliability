@@ -86,7 +86,8 @@
     "docs/assets/doctor-demo.svg",
     "docs/INTEGRATIONS.md",
     "docs/SAMPLE_AUDIT_REPORT.md",
-    "examples/doctor_snapshot_template.json"
+    "examples/doctor_snapshot_template.json",
+    "docs/SERVICE_ASSURANCE.md"
   ],
   "excluded_runtime_artifacts": [
     ".ns-direct-channel.lock",
