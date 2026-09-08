@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ns-agent-reliability/session.schema.json",
+  "title": "GoalSession",
+  "type": "object",
+  "required": [
+    "session_id",
+    "goal_id",
+    "provider",
+    "generation",
+    "state",
+    "baseline_hydrated_count",
+    "checkpoint_count"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generation": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "enum": [
+        "CREATED",
+        "BASELINE_HYDRATED",
+        "RUNNING",
+        "BLOCKED",
+        "ROLLOVER_REQUIRED",
+        "CLOSED"
+      ]
+    },
+    "baseline_digest": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "baseline_hydrated_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "checkpoint_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "execution_profile_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "last_failure_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

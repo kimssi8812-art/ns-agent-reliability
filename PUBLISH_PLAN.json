@@ -1,0 +1,58 @@
+{
+  "schema_version": "NS_AGENT_RELIABILITY_PUBLISH_PLAN_V1",
+  "status": "REPOSITORY_PREPUBLICATION_PASS_REMOTE_BOUNDARY_OPEN",
+  "source_tree": "$PUBLIC_CANDIDATE_ROOT",
+  "first_public_wedge": "Agent Reliability Doctor",
+  "recommended_repository_mode": "one standalone public repository centered on the Doctor and portable reliability/control regressions; keep historical architecture material inside the same repository rather than creating multiple repos",
+  "recommended_top_level_name": "agent-reliability-doctor",
+  "completed_before_push": [
+    "Doctor source/example/test included in FILE_INDEX tracked scope",
+    "fresh Python 3.11 venv pip install PASS",
+    "installed ns-reliability CLI smoke PASS with 15 findings",
+    "32/32 tests PASS",
+    "Python source compile PASS",
+    "77 tracked files public-content scrub PASS",
+    "JSON parse PASS",
+    "Doctor-first README first-value path added"
+  ],
+  "required_before_push": [
+    "confirm target GitHub owner/repository",
+    "verify authenticated GitHub write path",
+    "final exact 77-file staged-tree review"
+  ],
+  "publish_actions": [
+    "create or select the approved GitHub repository",
+    "stage only FILE_INDEX tracked candidate files and required canonical license files",
+    "review staged filenames and generated tree manifest",
+    "commit the Doctor-first publication candidate",
+    "push through the authenticated GitHub path",
+    "verify remote README rendering, install command and repository tree",
+    "record remote commit SHA and release evidence",
+    "begin GitHub/X/community distribution using real incident -> Doctor finding -> regression examples"
+  ],
+  "forbidden": [
+    "push raw private conversation exports",
+    "push browser authentication material",
+    "push credentials/tokens/private keys",
+    "push private Git remote URLs containing credentials",
+    "push production SSOT/runtime state",
+    "push Trading/financial logic",
+    "claim publication complete before remote commit verification",
+    "market the repository as a complete durable agent framework"
+  ],
+  "current_blockers": [
+    "target GitHub owner/repository not yet bound",
+    "gh CLI not authenticated",
+    "remote push/clone/install verification not yet possible"
+  ],
+  "completed_prepublication": [
+    "Doctor-first CLI packaging",
+    "fresh Python 3.11 install/smoke PASS",
+    "32/32 tests PASS",
+    "tracked-tree scrub PASS",
+    "Apache-2.0 + CC BY 4.0 split applied",
+    "NOTICE/provenance/trademark/SBOM added",
+    "historical/maturity wording audit remediated",
+    "durable technical prepublication receipt added"
+  ]
+}

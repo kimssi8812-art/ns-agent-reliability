@@ -1,0 +1,58 @@
+# Publication Checklist
+
+Status: PREPUBLICATION TECHNICAL PASS / NOT YET PUBLIC
+
+## First public wedge
+
+- [x] Agent Reliability Doctor selected as the first public wedge.
+- [x] Doctor source/example/test are included in `FILE_INDEX.json`.
+- [x] Installed CLI entrypoint exists: `ns-reliability`.
+- [x] README starts with a first-value Doctor path instead of requiring the reader to understand the full NS architecture first.
+
+## Technical pre-publication checks — 2026-09-08 KST
+
+- [x] Fresh Python 3.11 virtual environment created.
+- [x] `pip install .` built and installed the package successfully.
+- [x] Installed `ns-reliability examples/doctor_broken_system.json --json` smoke PASS.
+- [x] Doctor broken fixture produced 15 findings.
+- [x] Full regression suite PASS: 32/32.
+- [x] Python source compile PASS.
+- [x] JSON parse PASS for candidate JSON files.
+- [x] `tools/prepublish_check.py` PASS with Doctor included: 77 tracked files / 77 manifest files.
+- [x] Candidate tracked-tree secret/private-path pattern scan PASS.
+
+## Content/maturity checks
+
+- [x] README explicitly separates proven portable components from reference/scaffold/partial components.
+- [x] README explicitly states that the public `LeaseRegistry` is an in-memory fencing reference, not a complete durable persistent workflow runtime.
+- [x] Trading/financial logic remains excluded from publication scope.
+- [x] Complete historical-status audit across long-form docs; dated current/live language is explicitly scoped as historical and Worker Manager maturity conflict corrected.
+- [ ] Final staged-tree human review immediately before public push.
+
+- [x] Durable technical prepublication receipt: `release/TECHNICAL_PREPUBLICATION_RECEIPT_20260908.json`.
+
+- [x] Public distribution and Python namespace renamed to `ns-agent-reliability` / `ns_agent_reliability` to avoid third-party marks in the public package name.
+- [x] Wheel/sdist contents inspected: software wheel carries Apache LICENSE/NOTICE; source distribution carries both Apache and CC BY 4.0 texts with provenance metadata.
+- [x] Concrete provenance defects identified by independent review were remediated: neutral package namespace, correct wheel/sdist license scope, current counts/build requirements, SPDX-valid SBOM, and historical-source provenance statement.
+
+## Release-boundary checks still open
+
+- [x] Select and apply canonical release-candidate licenses: Apache-2.0 software / CC BY 4.0 narrative documentation.
+- [x] LICENSE / documentation license / NOTICE / trademark / third-party provenance / SPDX SBOM metadata added and aligned.
+- [ ] Confirm target GitHub owner/repository.
+- [ ] Verify authenticated GitHub write path.
+- [ ] Stage only the approved tracked public tree plus canonical license files.
+- [ ] Create the first public commit.
+- [ ] Push.
+- [ ] Verify remote tree, README rendering and first install command from the public repository.
+- [ ] Record remote commit SHA/release evidence.
+
+## Publication assertions
+
+The first release must not teach or imply an unrestricted remote-shell pattern. Bounded execution examples must preserve explicit scope, timeout/output limits, secret denial, and separation of privileged mutation.
+
+The public tree must not contain credentials, cookies, tokens, keys, private remote URLs, account identifiers, raw private conversations, production SSOT/runtime state, unredacted private logs, or Trading/financial logic.
+
+## Publication rule
+
+Do not silently weaken a failed check to finish the push. Technical readiness is not publication completion. Publication is complete only after the approved public repository is actually pushed and the remote tree/README/install path are verified.

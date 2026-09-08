@@ -1,0 +1,20 @@
+{
+  "ownership": {"released_or_expired": true, "session_alive": true, "reacquire_blocked": true},
+  "authorities": [
+    {"name": "scheduler_a", "writes": true, "target": "run_state"},
+    {"name": "recovery_b", "writes": true, "target": "run_state"}
+  ],
+  "retry": {"enabled": true, "max_attempts": null, "lineage_nested": true},
+  "resume": {"long_running": true, "durable_resume": false, "requires_raw_chat_history": true},
+  "public_tools": ["t01","t02","t03","t04","t05","t06","t07","t08","t09","t10","t11","t12","t13","t14","t15","t16","t17","t18","t19","t20","t21"],
+  "schema": {"client_version": "v1", "server_version": "v2", "stale_client_overrides_server": true},
+  "tools": [{"name": "read_anything", "class": "READ", "can_mutate": true}],
+  "mutation": {"enabled": true},
+  "verification": {"result_evidence_required": false},
+  "redispatch": {"completed_task_ids": ["task-1"], "dispatched_task_ids": ["task-1", "task-2"]},
+  "dependency_pins": [{"name": "apply-wrapper", "expected": "oldsha", "observed": "newsha"}],
+  "deployment": {"self_pin_blocks_current": true},
+  "rollback": {"deprecated_surfaces_restored": ["legacy-tool-surface"]},
+  "observability": {"required_for_execution": true},
+  "history": {"rebound_as_current_authority": true}
+}

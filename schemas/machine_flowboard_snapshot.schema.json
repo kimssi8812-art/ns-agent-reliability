@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ns-agent-reliability/machine_flowboard_snapshot.schema.json",
+  "title": "MachineFlowboardSnapshot",
+  "type": "object",
+  "required": [
+    "snapshot_id",
+    "observed_at",
+    "cursor",
+    "goals",
+    "workers",
+    "sessions",
+    "executor_runs",
+    "events"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": "string"
+    },
+    "cursor": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "workers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "executor_runs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "flow_event.schema.json"
+      }
+    },
+    "resources": {
+      "type": "object"
+    },
+    "dna_objects": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "system_health": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

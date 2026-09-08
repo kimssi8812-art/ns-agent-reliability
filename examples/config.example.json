@@ -1,0 +1,32 @@
+{
+  "read_roots": ["/srv/ns"],
+  "gpt_write_root": "/srv/ns/sandbox/gpt",
+  "allowed_service_prefixes": ["ns-"],
+  "secret_path_patterns": [
+    ".env*",
+    "*.key",
+    "*.pem",
+    "*credential*",
+    "*private*"
+  ],
+  "providers": {
+    "claude": {"enabled": true},
+    "codex": {"enabled": true},
+    "gemini": {"enabled": true}
+  },
+  "routing": {
+    "degraded_single_agent_is_explicit": true,
+    "prefer_warm_goal_session": true,
+    "blind_retry": false
+  },
+  "context": {
+    "baseline_once": true,
+    "delta_after_baseline": true,
+    "large_artifacts_external": true,
+    "unknown_capacity_policy": "UNKNOWN"
+  },
+  "gate": {
+    "adapter": "deployment-specific",
+    "chat_control_plane_can_apply_directly": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ns-agent-reliability/health_signal.schema.json",
+  "title": "HealthSignal",
+  "type": "object",
+  "required": [
+    "source",
+    "liveness",
+    "readiness",
+    "dispatch_allowed",
+    "observed_at"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "liveness": {
+      "enum": [
+        "ALIVE",
+        "DEAD",
+        "UNKNOWN",
+        "N/A"
+      ]
+    },
+    "readiness": {
+      "enum": [
+        "READY",
+        "NOT_READY",
+        "UNKNOWN",
+        "N/A"
+      ]
+    },
+    "dispatch_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "failure_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "ns_oss_prepublication_receipt_v1",
+  "date_kst": "2026-09-08",
+  "status": "REPOSITORY_PREPUBLICATION_PASS_NOT_PUBLIC",
+  "package": {
+    "name": "ns-agent-reliability",
+    "version": "0.1.0rc1",
+    "cli": "ns-reliability"
+  },
+  "clean_room": {
+    "python": "3.11",
+    "fresh_venv": true,
+    "pip_install_dot": "PASS",
+    "installed_cli_smoke": "PASS",
+    "doctor_fixture_findings": 15,
+    "pytest": "32/32 PASS",
+    "compileall": "PASS",
+    "json_parse": "PASS",
+    "tracked_public_scan": "77/77 PASS after package/namespace/license remediation"
+  },
+  "licenses": {
+    "software": "Apache-2.0",
+    "documentation": "CC-BY-4.0",
+    "apache_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "cc_by_4_0_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "brand": "separate; see TRADEMARKS.md"
+  },
+  "dependencies": {
+    "runtime_third_party": [],
+    "build_external": [
+      "setuptools>=77 (audit: 84.0.0, MIT)",
+      "wheel (audit: 0.48.0, MIT)"
+    ],
+    "test_external": [
+      "pytest (audit: 9.1.1, MIT)"
+    ],
+    "bundled_third_party_code_or_assets": "none identified in tracked public tree"
+  },
+  "independent_history_audit": {
+    "task_id": "oss_release_history_audit_20260908",
+    "report_sha256": "cc1087e1d5822156f16d808eb94f1d821684ff3d59f5874c7a56df91af68ff48",
+    "result": "SUCCEEDED; findings remediated in release-candidate wording/metadata except remote publication boundary"
+  },
+  "remaining_boundaries": [
+    "confirm target GitHub owner/repository",
+    "verify authenticated GitHub write path",
+    "push exact approved tracked tree",
+    "public clone/install/README verification",
+    "record remote commit SHA"
+  ],
+  "provenance_audit": {
+    "task_id": "oss_release_provenance_codex_20260908",
+    "report_sha256": "5736986b906d3f094bd9b9fcc9ac131ebbe791538857e4132c638ccdd31b05ec",
+    "initial_result": "HOLD",
+    "remediation": "public distribution/namespace renamed; wheel metadata license scope corrected; dual-license SBOM expanded and SPDX-validated; tool versions/licenses recorded; NS historical-source authorship/provenance clarified; stale counts/build requirements corrected"
+  },
+  "package_artifacts": {
+    "wheel": "Apache-2.0 software package; LICENSE/NOTICE present; CC-BY narrative documentation and README body not embedded in wheel or wheel METADATA",
+    "sdist": "software + narrative docs; Apache LICENSE + CC-BY-4.0 legal code + license policy + provenance + SBOM present",
+    "distribution_name": "ns-agent-reliability",
+    "python_namespace": "ns_agent_reliability",
+    "build": "PASS with setuptools>=77; no deprecation warning",
+    "artifact_inspection": "PASS: wheel Apache software-only scope; sdist includes Apache + CC-BY-4.0 texts and mixed-license provenance metadata",
+    "wheel_metadata_check": "PASS: License-Expression Apache-2.0; no README/CC-BY narrative body in METADATA"
+  },
+  "spdx_validation": {
+    "tool": "spdx-tools",
+    "version": "0.8.5",
+    "tool_license": "Apache-2.0",
+    "result": "PASS",
+    "note": "SBOM.spdx.json parsed/validated after relationship-direction and package-purpose corrections"
+  }
+}

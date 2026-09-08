@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ns-agent-reliability/human_cockpit_snapshot.schema.json",
+  "title": "HumanCockpitSnapshot",
+  "type": "object",
+  "required": [
+    "snapshot_id",
+    "observed_at",
+    "roadmap",
+    "progress",
+    "active_work",
+    "blockers",
+    "approvals",
+    "resource_summary",
+    "dna_summary",
+    "system_health"
+  ],
+  "properties": {
+    "snapshot_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "type": "string"
+    },
+    "roadmap": {
+      "type": "object"
+    },
+    "progress": {
+      "type": "object"
+    },
+    "active_work": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "resource_summary": {
+      "type": "object"
+    },
+    "dna_summary": {
+      "type": "object"
+    },
+    "system_health": {
+      "type": "object"
+    },
+    "next_critical_action": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
