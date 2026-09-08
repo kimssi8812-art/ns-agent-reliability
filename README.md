@@ -219,7 +219,7 @@ Run the publication scrub before release:
 python tools/prepublish_check.py
 ```
 
-This repository remains a publication candidate until the Doctor-inclusive tracked tree passes clean install/smoke and scrub checks, the final open-source license/provenance metadata is applied, and the target public repository is explicitly selected and verified.
+This 0.1.0rc1 release candidate has passed the Doctor-inclusive tracked-tree clean install/smoke and scrub checks, license/provenance review, and public-repository verification. Future releases should rerun these checks before publication.
 
 ## Commercial boundary
 
@@ -233,4 +233,4 @@ The Apache-2.0-licensed Doctor candidate and regressions are intended to remain 
 - NS names/logos/distinctive brand assets: not granted under those licenses.
 - Third-party names remain the property of their respective owners.
 
-See `LICENSE`, `LICENSE_POLICY.md`, `NOTICE`, `THIRD_PARTY_NOTICES.md` and `TRADEMARKS.md`. The repository is still a prepublication release candidate until a public GitHub remote is pushed and verified.
+See `LICENSE`, `LICENSE_POLICY.md`, `NOTICE`, `THIRD_PARTY_NOTICES.md` and `TRADEMARKS.md`. This repository is publicly available as a release candidate; the public remote and current release path have been verified.
