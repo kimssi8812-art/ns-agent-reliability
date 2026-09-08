@@ -1,7 +1,7 @@
 {
   "schema_version": "NS_AGENT_RELIABILITY_OPEN_SOURCE_V4",
   "authority": "GPT_SANDBOX_NON_SSOT",
-  "publication_status": "REPOSITORY_PREPUBLICATION_PASS_NOT_PUBLISHED",
+  "publication_status": "RELEASE_CANDIDATE_0.1.0RC1",
   "updated_kst": "2026-09-08",
   "historical_coverage": {
     "from": "2026-07-05",

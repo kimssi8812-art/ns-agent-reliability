@@ -1,6 +1,6 @@
 {
   "schema_version": "NS_AGENT_RELIABILITY_PUBLISH_PLAN_V1",
-  "status": "REPOSITORY_PREPUBLICATION_PASS_REMOTE_BOUNDARY_OPEN",
+  "status": "RELEASE_CANDIDATE_0.1.0RC1",
   "source_tree": "$PUBLIC_CANDIDATE_ROOT",
   "first_public_wedge": "Agent Reliability Doctor",
   "recommended_repository_mode": "one standalone public repository centered on the Doctor and portable reliability/control regressions; keep historical architecture material inside the same repository rather than creating multiple repos",
@@ -40,11 +40,6 @@
     "claim publication complete before remote commit verification",
     "market the repository as a complete durable agent framework"
   ],
-  "current_blockers": [
-    "target GitHub owner/repository not yet bound",
-    "gh CLI not authenticated",
-    "remote push/clone/install verification not yet possible"
-  ],
   "completed_prepublication": [
     "Doctor-first CLI packaging",
     "fresh Python 3.11 install/smoke PASS",
@@ -54,5 +49,11 @@
     "NOTICE/provenance/trademark/SBOM added",
     "historical/maturity wording audit remediated",
     "durable technical prepublication receipt added"
+  ],
+  "remote_release_verification": [
+    "public GitHub repository exists under the approved owner",
+    "remote default branch contains the approved tracked tree",
+    "fresh public clone + install + CLI smoke PASS",
+    "remote commit/tree evidence recorded internally"
   ]
 }

@@ -2,7 +2,7 @@
 
 Find reliability and control-plane failure patterns in agent/MCP systems before they become repeated production incidents.
 
-> Status: PUBLICATION_CANDIDATE / NOT YET PUBLIC  
+> Status: 0.1.0rc1 RELEASE CANDIDATE  
 > First public wedge: Agent Reliability Doctor  
 > Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
 
@@ -11,6 +11,8 @@ Find reliability and control-plane failure patterns in agent/MCP systems before 
 Python 3.11+ is required.
 
 ```bash
+git clone https://github.com/kimssi8812-art/ns-agent-reliability.git
+cd ns-agent-reliability
 python -m pip install .
 ns-reliability examples/doctor_broken_system.json
 ```

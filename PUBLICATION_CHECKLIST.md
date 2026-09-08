@@ -1,6 +1,6 @@
 # Publication Checklist
 
-Status: PREPUBLICATION TECHNICAL PASS / NOT YET PUBLIC
+Status: 0.1.0rc1 RELEASE CANDIDATE / REPOSITORY CHECKS PASS
 
 ## First public wedge
 

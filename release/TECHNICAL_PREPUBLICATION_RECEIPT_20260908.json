@@ -1,7 +1,7 @@
 {
   "schema": "ns_oss_prepublication_receipt_v1",
   "date_kst": "2026-09-08",
-  "status": "REPOSITORY_PREPUBLICATION_PASS_NOT_PUBLIC",
+  "status": "HISTORICAL_PREPUBLICATION_REPOSITORY_PASS_RECEIPT",
   "package": {
     "name": "ns-agent-reliability",
     "version": "0.1.0rc1",
@@ -69,5 +69,6 @@
     "tool_license": "Apache-2.0",
     "result": "PASS",
     "note": "SBOM.spdx.json parsed/validated after relationship-direction and package-purpose corrections"
-  }
+  },
+  "receipt_scope": "Repository checks completed before first public push; this is historical evidence, not current remote-publication state."
 }
