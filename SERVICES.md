@@ -64,7 +64,7 @@ You receive:
 
 ## Start with a fit check
 
-**Public / no-secret intake:** [Open the Reliability Audit Fit Check](https://github.com/kimssi8812-art/ns-agent-reliability/issues/new?template=audit-fit-check.yml)
+**Public / no-secret intake:** [Open the Reliability Audit Fit Check](https://github.com/nslabhwan/ns-agent-reliability/issues/new?template=audit-fit-check.yml)
 
 GitHub sign-in is required to submit the fit-check issue. The issue is public. Do **not** include credentials, private repositories, customer data, private endpoints, proprietary logs or other confidential material. If the situation is sensitive, submit only a high-level symptom and request a private follow-up path.
 

@@ -6,7 +6,7 @@ Find reliability and control-plane failure patterns in agent/MCP systems before 
 > First public wedge: Agent Reliability Doctor  
 > Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
 
-**[Commercial audits & pricing](https://kimssi8812-art.github.io/ns-agent-reliability/)** · [Sample audit report](docs/SAMPLE_AUDIT_REPORT.md) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
+**[Commercial audits & pricing](https://nslabhwan.github.io/ns-agent-reliability/)** · [Sample audit report](docs/SAMPLE_AUDIT_REPORT.md) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
 
 
 ![Agent Reliability Doctor terminal demo](docs/assets/doctor-demo.svg)
@@ -27,7 +27,7 @@ If several of these are true, run the Doctor first. For a bounded evidence-backe
 Python 3.11+ is required.
 
 ```bash
-git clone https://github.com/kimssi8812-art/ns-agent-reliability.git
+git clone https://github.com/nslabhwan/ns-agent-reliability.git
 cd ns-agent-reliability
 python -m pip install .
 ns-reliability examples/doctor_broken_system.json
@@ -249,7 +249,7 @@ This 0.1.0rc1 release candidate has passed the Doctor-inclusive tracked-tree cle
 
 The Apache-2.0-licensed Doctor candidate and regressions remain useful without paid services. Optional paid services are **AI-assisted, evidence-reviewed and human-reviewed**: **MCP Surface & Contract Quick Audit ($750 / Korea ₩990,000)**, **AI Agent Reliability Audit (Founding $1,100 / Standard $2,200; Korea ₩1,490,000 / ₩2,900,000)**, and **Safe Deployment Hardening Sprint (from $5,000 / Korea ₩6,900,000 for the current bounded launch scope)**.
 
-See [full scope and pricing](SERVICES.md), [service assurance / responsibility boundary](docs/SERVICE_ASSURANCE.md), or start a [public, no-secret Audit Fit Check](https://github.com/kimssi8812-art/ns-agent-reliability/issues/new?template=audit-fit-check.yml). Paid work is not required to use the public diagnostic core.
+See [full scope and pricing](SERVICES.md), [service assurance / responsibility boundary](docs/SERVICE_ASSURANCE.md), or start a [public, no-secret Audit Fit Check](https://github.com/nslabhwan/ns-agent-reliability/issues/new?template=audit-fit-check.yml). Paid work is not required to use the public diagnostic core.
 
 
 ## Licensing

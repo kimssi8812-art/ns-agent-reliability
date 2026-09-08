@@ -83,7 +83,7 @@
     "python_namespace": "ns_agent_reliability",
     "wheel_license_scope": "Apache-2.0 software; narrative CC docs not bundled in wheel",
     "sdist_license_scope": "Apache-2.0 software + CC-BY-4.0 narrative docs with both canonical license texts",
-    "public_repository": "https://github.com/kimssi8812-art/ns-agent-reliability",
+    "public_repository": "https://github.com/nslabhwan/ns-agent-reliability",
     "current_main_packaging": "visual Doctor demo + use-case triage + integration guide + sample audit report + service assurance + commercial services + public no-secret fit-check + GitHub Pages sales surface"
   },
   "publish_gate": [
