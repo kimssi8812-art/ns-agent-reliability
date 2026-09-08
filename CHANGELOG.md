@@ -1,5 +1,19 @@
 # Changelog
 
+## Main — public packaging enhancement — 2026-09-08
+
+Repository is public and remotely verified. Added the first conversion/discovery layer without changing the Doctor core:
+
+- visual terminal demo based on actual Doctor output;
+- symptom-first “Use this if…” triage near the top of README;
+- LangGraph, CrewAI, OpenAI Agents SDK and MCP evidence-mapping guide;
+- neutral normalized snapshot template;
+- illustrative/sanitized audit report clearly labeled as **not** an external customer case;
+- commercial service scope/pricing sourced from NS Package Factory;
+- public no-secret Audit Fit Check issue form;
+- lightweight GitHub Pages sales surface;
+- tracked public scope expanded from 77 to 86 files; clean install, 32/32 tests, Doctor 15 findings, snapshot-template 0 findings, public scrub and package-license boundary all reverified.
+
 ## 0.1.0rc1-prepublication — 2026-09-08
 
 Doctor-first release candidate prepared for external publication.

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Technical usage question
+    url: https://github.com/kimssi8812-art/ns-agent-reliability/issues/new
+    about: Ask a public question about the open-source Doctor. Do not include secrets.

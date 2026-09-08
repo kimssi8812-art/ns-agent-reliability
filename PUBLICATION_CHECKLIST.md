@@ -18,7 +18,7 @@ Status: 0.1.0rc1 RELEASE CANDIDATE / REPOSITORY CHECKS PASS
 - [x] Full regression suite PASS: 32/32.
 - [x] Python source compile PASS.
 - [x] JSON parse PASS for candidate JSON files.
-- [x] `tools/prepublish_check.py` PASS with Doctor included: 77 tracked files / 77 manifest files.
+- [x] `tools/prepublish_check.py` PASS with Doctor included: 86 tracked files / 86 manifest files.
 - [x] Candidate tracked-tree secret/private-path pattern scan PASS.
 
 ## Content/maturity checks
@@ -27,7 +27,7 @@ Status: 0.1.0rc1 RELEASE CANDIDATE / REPOSITORY CHECKS PASS
 - [x] README explicitly states that the public `LeaseRegistry` is an in-memory fencing reference, not a complete durable persistent workflow runtime.
 - [x] Trading/financial logic remains excluded from publication scope.
 - [x] Complete historical-status audit across long-form docs; dated current/live language is explicitly scoped as historical and Worker Manager maturity conflict corrected.
-- [ ] Final staged-tree human review immediately before public push.
+- [x] Final staged-tree review completed before the first public push; future releases require an exact `FILE_INDEX.json` match.
 
 - [x] Durable technical prepublication receipt: `release/TECHNICAL_PREPUBLICATION_RECEIPT_20260908.json`.
 
@@ -35,17 +35,18 @@ Status: 0.1.0rc1 RELEASE CANDIDATE / REPOSITORY CHECKS PASS
 - [x] Wheel/sdist contents inspected: software wheel carries Apache LICENSE/NOTICE; source distribution carries both Apache and CC BY 4.0 texts with provenance metadata.
 - [x] Concrete provenance defects identified by independent review were remediated: neutral package namespace, correct wheel/sdist license scope, current counts/build requirements, SPDX-valid SBOM, and historical-source provenance statement.
 
-## Release-boundary checks still open
+## Release-boundary checks
 
 - [x] Select and apply canonical release-candidate licenses: Apache-2.0 software / CC BY 4.0 narrative documentation.
 - [x] LICENSE / documentation license / NOTICE / trademark / third-party provenance / SPDX SBOM metadata added and aligned.
-- [ ] Confirm target GitHub owner/repository.
-- [ ] Verify authenticated GitHub write path.
-- [ ] Stage only the approved tracked public tree plus canonical license files.
-- [ ] Create the first public commit.
-- [ ] Push.
-- [ ] Verify remote tree, README rendering and first install command from the public repository.
-- [ ] Record remote commit SHA/release evidence.
+- [x] Confirm target GitHub owner/repository.
+- [x] Verify authenticated GitHub write path.
+- [x] Stage only the approved tracked public tree plus canonical license files.
+- [x] Create the first public commit.
+- [x] Push.
+- [x] Verify remote tree, README rendering and first install command from the public repository.
+- [x] Record remote commit SHA/release evidence.
+- [x] Post-push stale-state wording sweep added after the README truth hotfix.
 
 ## Publication assertions
 

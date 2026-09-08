@@ -1,6 +1,6 @@
 {
   "schema_version": "NS_AGENT_RELIABILITY_PUBLISH_PLAN_V1",
-  "status": "RELEASE_CANDIDATE_0.1.0RC1",
+  "status": "PUBLIC_LIVE_RELEASE_CANDIDATE",
   "source_tree": "$PUBLIC_CANDIDATE_ROOT",
   "first_public_wedge": "Agent Reliability Doctor",
   "recommended_repository_mode": "one standalone public repository centered on the Doctor and portable reliability/control regressions; keep historical architecture material inside the same repository rather than creating multiple repos",
@@ -11,24 +11,20 @@
     "installed ns-reliability CLI smoke PASS with 15 findings",
     "32/32 tests PASS",
     "Python source compile PASS",
-    "77 tracked files public-content scrub PASS",
+    "current FILE_INDEX tracked-tree public-content scrub PASS (86 files at this update)",
     "JSON parse PASS",
-    "Doctor-first README first-value path added"
+    "Doctor-first README first-value path added",
+    "public GitHub remote created, pushed and verified"
   ],
-  "required_before_push": [
-    "confirm target GitHub owner/repository",
-    "verify authenticated GitHub write path",
-    "final exact 77-file staged-tree review"
-  ],
+  "required_before_push": [],
   "publish_actions": [
-    "create or select the approved GitHub repository",
-    "stage only FILE_INDEX tracked candidate files and required canonical license files",
-    "review staged filenames and generated tree manifest",
-    "commit the Doctor-first publication candidate",
-    "push through the authenticated GitHub path",
-    "verify remote README rendering, install command and repository tree",
+    "for each future release: stage only FILE_INDEX tracked candidate files and canonical license files",
+    "review staged filenames and require exact FILE_INDEX match",
+    "run clean install/tests/scrub/artifact checks",
+    "commit and push through authenticated GitHub path",
+    "verify remote README rendering, public clone/install and repository tree",
     "record remote commit SHA and release evidence",
-    "begin GitHub/X/community distribution using real incident -> Doctor finding -> regression examples"
+    "run post-push stale-state wording sweep"
   ],
   "forbidden": [
     "push raw private conversation exports",
@@ -51,9 +47,9 @@
     "durable technical prepublication receipt added"
   ],
   "remote_release_verification": [
-    "public GitHub repository exists under the approved owner",
-    "remote default branch contains the approved tracked tree",
-    "fresh public clone + install + CLI smoke PASS",
-    "remote commit/tree evidence recorded internally"
+    "PASS: public GitHub repository exists under approved owner",
+    "PASS: remote default branch contains approved tracked tree",
+    "PASS: fresh unauthenticated public clone + install + CLI smoke",
+    "PASS: remote commit/tree evidence recorded internally"
   ]
 }

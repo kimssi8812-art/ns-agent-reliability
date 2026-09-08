@@ -20,9 +20,11 @@ The canonical Apache-2.0 text is in `LICENSE`.
 Original narrative documentation is licensed under Creative Commons Attribution 4.0 International (`CC-BY-4.0`):
 
 - `README.md`
+- `SERVICES.md`
 - `docs/**`
 - `architecture/**`
 - `incidents/**`
+- `.github/ISSUE_TEMPLATE/**`
 - `CHANGELOG.md`, `CONTRIBUTING.md`, `SECURITY.md`, `PUBLICATION_CHECKLIST.md` and other narrative release notes
 
 The canonical CC BY 4.0 legal code is in `LICENSES/CC-BY-4.0.txt`.

@@ -6,6 +6,20 @@ Find reliability and control-plane failure patterns in agent/MCP systems before 
 > First public wedge: Agent Reliability Doctor  
 > Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
 
+
+![Agent Reliability Doctor terminal demo](docs/assets/doctor-demo.svg)
+
+## Use this if any of these are true
+
+- an agent says **done** but the external state did not change;
+- a completed task can be retried or redispatched;
+- multiple workers/services can write the same canonical target;
+- MCP/tool surfaces and schemas keep accumulating or drifting;
+- rollback can restore deprecated behavior;
+- long-running work cannot resume from bounded durable state.
+
+If several of these are true, run the Doctor first. For a bounded evidence-backed review of a real stack, see [Commercial reliability services](SERVICES.md).
+
 ## 60-second first value
 
 Python 3.11+ is required.
@@ -65,6 +79,14 @@ The current rule set is derived from real reliability incidents and regression w
 - historical state accidentally regaining current authority.
 
 The goal is not to replace LangGraph, CrewAI, AutoGen, MCP runtimes, observability platforms or security scanners. The Doctor is a reliability/control diagnostic layer that can be used alongside existing stacks.
+
+## From your stack to the Doctor
+
+The Doctor is framework-neutral. It does not require a new runtime or observability database. Existing checkpoints, traces, task records, MCP schemas and deployment evidence can be mapped into the normalized snapshot.
+
+- [LangGraph / CrewAI / OpenAI Agents SDK / MCP evidence mapping](docs/INTEGRATIONS.md)
+- [Neutral snapshot template](examples/doctor_snapshot_template.json)
+- [Illustrative audit report — not an external customer case](docs/SAMPLE_AUDIT_REPORT.md)
 
 ## Why this exists
 
@@ -223,7 +245,9 @@ This 0.1.0rc1 release candidate has passed the Doctor-inclusive tracked-tree cle
 
 ## Commercial boundary
 
-The Apache-2.0-licensed Doctor candidate and regressions are intended to remain useful without paid services. Separate commercial services may include bounded MCP/control-surface audits, agent reliability audits and implementation hardening. Paid work is not required to use the public diagnostic core.
+The Apache-2.0-licensed Doctor candidate and regressions remain useful without paid services. Optional bounded services are available for teams that want evidence review or implementation help: **MCP Surface & Contract Quick Audit (₩990,000)**, **AI Agent Reliability Audit (Founding ₩1,490,000 / Standard ₩2,900,000)**, and **Safe Deployment Hardening Sprint (₩6,900,000)**.
+
+See [full scope and pricing](SERVICES.md) or start a [public, no-secret Audit Fit Check](https://github.com/kimssi8812-art/ns-agent-reliability/issues/new?template=audit-fit-check.yml). Paid work is not required to use the public diagnostic core.
 
 
 ## Licensing

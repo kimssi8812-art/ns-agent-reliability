@@ -77,7 +77,16 @@
     "THIRD_PARTY_NOTICES.md",
     "SBOM.spdx.json",
     "release/TECHNICAL_PREPUBLICATION_RECEIPT_20260908.json",
-    "MANIFEST.in"
+    "MANIFEST.in",
+    "SERVICES.md",
+    ".github/ISSUE_TEMPLATE/audit-fit-check.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    "docs/.nojekyll",
+    "docs/index.html",
+    "docs/assets/doctor-demo.svg",
+    "docs/INTEGRATIONS.md",
+    "docs/SAMPLE_AUDIT_REPORT.md",
+    "examples/doctor_snapshot_template.json"
   ],
   "excluded_runtime_artifacts": [
     ".ns-direct-channel.lock",

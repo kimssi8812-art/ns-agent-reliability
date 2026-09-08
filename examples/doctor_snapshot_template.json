@@ -1,0 +1,24 @@
+{
+  "ownership": {
+    "released_or_expired": false,
+    "session_alive": false,
+    "reacquire_blocked": false
+  },
+  "authorities": [
+    {"name": "canonical_writer", "writes": true, "target": "run_state"}
+  ],
+  "retry": {"enabled": true, "max_attempts": 3, "lineage_nested": false},
+  "resume": {"long_running": true, "durable_resume": true, "requires_raw_chat_history": false},
+  "public_tools": [],
+  "public_tool_warning_threshold": 20,
+  "schema": {"client_version": "v1", "server_version": "v1", "stale_client_overrides_server": false},
+  "tools": [],
+  "mutation": {"enabled": true},
+  "verification": {"result_evidence_required": true},
+  "redispatch": {"completed_task_ids": [], "dispatched_task_ids": []},
+  "dependency_pins": [],
+  "deployment": {"self_pin_blocks_current": false},
+  "rollback": {"deprecated_surfaces_restored": []},
+  "observability": {"required_for_execution": false},
+  "history": {"rebound_as_current_authority": false}
+}
