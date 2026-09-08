@@ -6,6 +6,8 @@ Find reliability and control-plane failure patterns in agent/MCP systems before 
 > First public wedge: Agent Reliability Doctor  
 > Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
 
+**[Commercial audits & pricing](https://kimssi8812-art.github.io/ns-agent-reliability/)** · [Sample audit report](docs/SAMPLE_AUDIT_REPORT.md) · [Integration guide](docs/INTEGRATIONS.md)
+
 
 ![Agent Reliability Doctor terminal demo](docs/assets/doctor-demo.svg)
 

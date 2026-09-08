@@ -52,7 +52,7 @@ You receive:
 
 **Public / no-secret intake:** [Open the Reliability Audit Fit Check](https://github.com/kimssi8812-art/ns-agent-reliability/issues/new?template=audit-fit-check.yml)
 
-The issue is public. Do **not** include credentials, private repositories, customer data, private endpoints, proprietary logs or other confidential material. If the situation is sensitive, submit only a high-level symptom and request a private follow-up path.
+GitHub sign-in is required to submit the fit-check issue. The issue is public. Do **not** include credentials, private repositories, customer data, private endpoints, proprietary logs or other confidential material. If the situation is sensitive, submit only a high-level symptom and request a private follow-up path.
 
 Before any audit accepts customer material, the evidence boundary and processing route must be agreed explicitly.
 
