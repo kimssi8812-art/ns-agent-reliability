@@ -1,12 +1,16 @@
 # NS Agent Reliability Doctor
 
-Find reliability and control-plane failure patterns in agent/MCP systems before they become repeated production incidents.
+**Your agent said DONE. Did it actually happen?**
+
+Find silent control-plane reliability failures that traces and model evals can miss: duplicate execution, stale ownership, retry loops, evidence gaps, MCP contract drift and unsafe rollback.
 
 > Status: 0.1.0rc1 RELEASE CANDIDATE  
 > First public wedge: Agent Reliability Doctor  
 > Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
 
-**[Commercial audits & pricing](https://nslabhwan.github.io/ns-agent-reliability/)** · [Sample audit report](docs/SAMPLE_AUDIT_REPORT.md) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
+**[Run the free Doctor](#60-second-first-value)** · **[See a sample Reliability Audit](docs/SAMPLE_AUDIT_REPORT.md)** · [Commercial audits & pricing](https://nslabhwan.github.io/ns-agent-reliability/) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
+
+No framework migration. No new observability database. No vendor runtime required.
 
 
 ![Agent Reliability Doctor terminal demo](docs/assets/doctor-demo.svg)
