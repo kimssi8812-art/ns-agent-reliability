@@ -10,6 +10,8 @@ Find silent control-plane reliability failures that traces and model evals can m
 
 **[Run the free Doctor](#60-second-first-value)** · **[See a sample Reliability Audit](docs/SAMPLE_AUDIT_REPORT.md)** · [Commercial audits & pricing](https://nslabhwan.github.io/ns-agent-reliability/) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
 
+**Running agents in production? [Tell me which control-plane failure the Doctor is missing](https://github.com/nslabhwan/ns-agent-reliability/issues/1).**
+
 No framework migration. No new observability database. No vendor runtime required.
 
 
