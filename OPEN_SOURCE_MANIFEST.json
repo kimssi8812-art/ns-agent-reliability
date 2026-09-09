@@ -61,7 +61,7 @@
     "installed_cli_smoke": "PASS",
     "doctor_fixture_findings": 15,
     "tests": "32/32 PASS",
-    "tracked_files": 87,
+    "tracked_files": 88,
     "public_scan": "PASS",
     "json_parse": "PASS",
     "wheel_sdist_inspection": "PASS",

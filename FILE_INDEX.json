@@ -87,7 +87,8 @@
     "docs/INTEGRATIONS.md",
     "docs/SAMPLE_AUDIT_REPORT.md",
     "examples/doctor_snapshot_template.json",
-    "docs/SERVICE_ASSURANCE.md"
+    "docs/SERVICE_ASSURANCE.md",
+    "docs/assets/social-preview.png"
   ],
   "excluded_runtime_artifacts": [
     ".ns-direct-channel.lock",

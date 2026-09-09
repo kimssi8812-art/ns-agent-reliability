@@ -1,5 +1,11 @@
 # Changelog
 
+## Main — distribution/social preview asset — 2026-09-09
+
+- Added a 1280×640 PNG social-preview asset built around the real Doctor terminal findings.
+- Public tracked scope expanded to 88 files.
+- GitHub Settings upload remains a manual platform boundary; committing the image does not automatically set the Social Preview slot.
+
 ## Main — professional service assurance — 2026-09-08
 
 - Added public professional-service assurance and responsibility boundary.
