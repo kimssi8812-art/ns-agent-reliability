@@ -4,13 +4,7 @@
 
 Find silent control-plane reliability failures that traces and model evals can miss: duplicate execution, stale ownership, retry loops, evidence gaps, MCP contract drift and unsafe rollback.
 
-> Status: 0.1.0rc1 RELEASE CANDIDATE  
-> First public wedge: Agent Reliability Doctor  
-> Runtime/reference scope: portable diagnostics, regressions and reliability/control-plane contracts; not a production-ready full agent framework.
-
 **[Run the free Doctor](#60-second-first-value)** · **[See a sample Reliability Audit](docs/SAMPLE_AUDIT_REPORT.md)** · [Commercial audits & pricing](https://nslabhwan.github.io/ns-agent-reliability/) · [Integration guide](docs/INTEGRATIONS.md) · [Service assurance](docs/SERVICE_ASSURANCE.md)
-
-**Running agents in production? [Tell me which control-plane failure the Doctor is missing](https://github.com/nslabhwan/ns-agent-reliability/issues/1).**
 
 No framework migration. No new observability database. No vendor runtime required.
 
@@ -163,6 +157,8 @@ See `tests/test_one_live_commit.py` and `incidents/one-live-commit-gate.md`.
 See `examples/doctor_broken_system.json` and `tests/test_doctor.py`.
 
 ## Important maturity boundary
+
+> Current status: **0.1.0rc1 RELEASE CANDIDATE**. The public wedge is the Agent Reliability Doctor; broader orchestration material remains reference/scaffold unless explicitly listed as proven portable behavior below.
 
 This repository contains both portable code and historical/reference architecture material. They are not all at the same maturity level.
 
