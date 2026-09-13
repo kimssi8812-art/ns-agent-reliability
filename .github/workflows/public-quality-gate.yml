@@ -1,0 +1,23 @@
+name: Public quality gate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Content quality
+        run: python tools/content_quality_check.py --strict
+      - name: Existing public prepublish checks
+        run: python tools/prepublish_check.py
